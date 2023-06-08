@@ -83,7 +83,7 @@ UserRouter.get("/verify/:token", async (req, res) => {
     await newBlacklist.save();
 
     res.redirect(
-      "http://127.0.0.1:5501/unit-7/sprint-1/evaluation/Mock10/Frontend/index.html"
+      "https://celebrated-raindrop-6b2703.netlify.app/index.html"
     );
   } catch (error) {
     res.status(500).json({ message: error.message });

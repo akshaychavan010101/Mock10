@@ -28,7 +28,7 @@ UserRouter.post("/register", async (req, res) => {
       from: "akki010102@gmail.com",
       subject: "Verify your email",
       text: "Please verify your email",
-      html: `<a href="http://localhost:3000/verify/${token}">Click here to verify your email</a>`,
+      html: `<a href="https://mock10-u35w.onrender.com/verify/${token}">Click here to verify your email</a>`,
     };
     await sendgrid.send(msg);
 
